@@ -1,0 +1,114 @@
+<script>
+
+    function voegEersteToe() {
+
+        var node = document.createElement("LI");
+        var textnode = document.createTextNode("2 kilo appels");
+         node.appendChild(textnode);
+        document.getElementById("myList").appendChild(node);
+
+    }
+
+    function voegTweedeToe() {
+
+        var node = document.createElement("LI");
+        var textnode = document.createTextNode("200 gram boter");
+        node.appendChild(textnode);
+        document.getElementById("myList").appendChild(node);
+
+}
+
+function voegDerdeToe() {
+
+        var node = document.createElement("LI");
+        var textnode = document.createTextNode("200 gram basterdsuiker");
+        node.appendChild(textnode);
+        document.getElementById("myList").appendChild(node);
+
+}
+
+function voegVierdeToe() {
+
+        var node = document.createElement("LI");
+        var textnode = document.createTextNode("1 ei");
+        node.appendChild(textnode);
+        document.getElementById("myList").appendChild(node);
+
+}
+
+function empty() {
+
+    var list = document.getElementById("myList");
+   
+
+    while (list.firstChild) {
+    list.removeChild(list.firstChild);
+}
+
+   
+
+    
+
+
+
+}
+
+
+
+</script>
+
+
+<style>
+
+    #appels {
+
+        background-color: green;
+        color: white;
+    }
+
+    #boter {
+
+        background-color: green;
+        color: white;
+    }
+
+    #suiker {
+
+        background-color: green;
+        color: white;
+    }
+
+    #ei {
+
+        background-color: green;
+        color: white;
+    }
+
+    #weg {
+
+        background-color: red;
+        color: white;
+    }
+
+
+
+
+</style>
+<div><b>Ingredienten appeltaart:</b></div>
+
+<p>2 kilo appels</p> <input type="button" value="Voeg toe aan lijst" onclick="voegEersteToe()" id="appels">
+<p> 200 gram boter</p> <input type="button" value="Voeg toe aan lijst" onclick="voegTweedeToe()" id="boter">
+<p>200 gram basterdsuiker</p> <input type="button" value="Voeg toe aan lijst" onclick="voegDerdeToe()" id="suiker">
+<p>1 ei</p> <input type="button" value="Voeg toe aan lijst" onclick="voegVierdeToe()" id="ei">
+
+<br>
+<br>
+
+<div><b>Mijn lijst</b></div>
+
+<ul id="myList">
+        
+      </ul>
+
+
+<input type="button" value="Maak de lijst leeg" onclick="empty()" id="weg">

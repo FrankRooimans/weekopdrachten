@@ -1,0 +1,37 @@
+<script>
+
+    function show() {
+
+        var een = document.getElementById("voornaam").value;
+
+        var twee = document.getElementById("achternaam").value;
+
+        var drie = document.getElementById("geboortedatum").value;
+
+        alert("Dag" + ' ' + een + ' ' + twee + ' ' + "fijn dat je op" + ' ' + drie + ' ' + "geboren bent.");
+    }
+
+
+
+
+</script>
+
+<p>Vul hier je voornaam in.</p>
+
+<input type="text" id="voornaam">
+
+<p>Vul hier je achternaam in</p>
+
+<input type="text" id="achternaam">
+
+<p>Vul hier je geboortedatum in.</p>
+
+<input type="date" id="geboortedatum">
+
+<br>
+<br>
+<br>
+
+<input type="button" id="knopje" value="Klik hier en de tekst verschijnt" onclick="show()">
+
+<div id="tekst"></div>

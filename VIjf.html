@@ -1,0 +1,42 @@
+<script>
+
+    var kleuren = ["green", "orange", "red"];
+    var nummer = 0;
+
+function veranderen() {
+
+    var licht = document.getElementById("vlak");
+        vlak.style.backgroundColor = kleuren[nummer]
+        nummer = nummer + 1;
+        console.log(nummer);
+        if(nummer > 2){
+            nummer = 0;
+        }
+
+    
+
+   
+}
+
+
+</script>
+
+<style>
+
+    #vlak {
+
+        width: 200px;
+        height: 200px;
+        border: 2px;
+        border-style: solid;
+        background-color: red;
+    }
+
+</style>
+
+<div id="vlak"></div>
+
+<br>
+<br>
+
+<input type="button" id="knop" onclick="veranderen()" value="Klik op de knop en de kleur verandert">

@@ -1,0 +1,47 @@
+<script>
+
+// klik op de knop - uit drie array's worden random keuzes gemaakt en weergeven in drie div's
+
+function mixen() {
+
+    var oefening = ["Hardlopen", "Fietsen", "Boxen", "Skaten"];
+
+    var x = oefening[Math.floor(Math.random() * oefening.length)];
+
+    document.getElementById("zien").innerHTML = x;
+
+    var setjes = [5, 10, 15, 20];
+
+    var y = setjes[Math.floor(Math.random() * setjes.length)];
+
+    document.getElementById("zien2").innerHTML = y;
+
+    var herhalingen = [2, 3, 4, 5];
+
+    var z = herhalingen[Math.floor(Math.random() * herhalingen.length)];
+
+    document.getElementById("zien3").innerHTML = z;
+
+
+
+
+}
+
+
+</script>
+
+<h1>Genereer een workout</h1>
+
+<input type="button" value="Genereer workout" id="klikken" onclick="mixen()">
+
+<h3>Soort workout</h3>
+
+<div id="zien"></div>
+
+<h3>Aantal setjes</h3>
+
+<div id="zien2"></div>
+
+<h3>Aantal herhalingen</h3>
+
+<div id="zien3"></div>

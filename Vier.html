@@ -1,0 +1,160 @@
+<script>
+
+    // function nul() {
+
+        // document.getElementById("divje").value = 0;
+
+    // }
+
+function tomaat() {
+
+    var waarde = parseInt(document.getElementById("divje").value); //ophalen
+
+    var nieuweWaarde = parseInt(waarde + 1); // toevoegen
+
+   document.getElementById("divje").value = nieuweWaarde; // laten zien
+
+}
+
+function appel() {
+
+    var waarde = parseInt(document.getElementById("divje").value); //ophalen
+
+    var nieuweWaarde = parseInt(waarde + 2); // toevoegen
+
+    document.getElementById("divje").value = nieuweWaarde;
+
+    
+}
+
+function banaan() {
+
+    var waarde = parseInt(document.getElementById("divje").value); //ophalen
+
+    var nieuweWaarde = parseInt(waarde + 1); // toevoegen
+
+    document.getElementById("divje").value = nieuweWaarde;
+
+
+}
+
+function sinaasappel() {
+
+    var waarde = parseInt(document.getElementById("divje").value); //ophalen
+
+    var nieuweWaarde = parseInt(waarde + 3); // toevoegen
+
+    document.getElementById("divje").value = nieuweWaarde;
+}
+
+function kers() {
+
+    var waarde = parseInt(document.getElementById("divje").value); //ophalen
+
+    var nieuweWaarde = parseInt(waarde + 1); // toevoegen
+
+    document.getElementById("divje").value = nieuweWaarde;
+
+}
+
+
+
+
+</script>
+
+
+
+<style>
+
+#tomaat {
+
+    border-radius: 60px;
+    width: 100px;
+    height: 100px;
+    border: 2px;
+    border-style: solid;
+    background-color: red;
+    color: white;
+}
+
+#appel {
+
+    border-radius: 60px;
+    width: 100px;
+    height: 100px;
+    border: 2px;
+    border-style: solid;
+    background-color: green;
+    color: white;
+
+}
+
+#banaan {
+
+    border-radius: 60px;
+    width: 100px;
+    height: 100px;
+    border: 2px;
+    border-style: solid;
+    background-color:gold;
+    color: white;
+
+}
+
+#sinaasappel {
+
+    border-radius: 60px;
+    width: 100px;
+    height: 100px;
+    border: 2px;
+    border-style: solid;
+    background-color:orange;
+    color: white;
+
+}
+
+#kers {
+
+    border-radius: 60px;
+    width: 100px;
+    height: 100px;
+    border: 2px;
+    border-style: solid;
+    background-color:purple;
+    color: white;
+
+}
+
+#divje {
+
+    width: 70px;
+    border-radius: 60px;
+    width: 100px;
+    height: 100px;
+    border: 2px;
+    border-style: solid;
+}
+
+
+</style>
+
+
+<input type="button" value="Tomaat &#8364;1" id="tomaat" onclick="tomaat()">
+
+<input type="button" value="Appel &#8364;2" id="appel" onclick="appel()">
+
+<input type="button" value="Banaan &#8364;1" id="banaan" onclick="banaan()">
+
+<input type="button" value="Sinaasappel &#8364;3" id="sinaasappel" onclick="sinaasappel()">
+
+<input type="button" value="Kers &#8364;1" id="kers" onclick="kers()">
+
+<br>
+<br>
+<br>
+<h2>Toaal bedrag &#8364</h2>
+
+<input type="button" value="0" id="divje">
+
+
+
